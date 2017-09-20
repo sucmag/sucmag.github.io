@@ -1,0 +1,67 @@
+.contact {
+	margin-top: 210px;
+	margin-bottom: 210px;
+	width: 720px;
+}
+
+h3 {
+	font-family: 'Helvetica';
+	font-size: 20pt;
+	color: white;
+	font-weight: lighter;
+}
+
+h3 > a {
+	text-decoration: underline;
+}
+
+.socialicon {
+	width: 100px;
+	margin-right: 30px;
+	margin-left: 30px;
+	background-color: none;
+	transition: background-color ease .5s;
+}
+
+.socialicon:hover {
+	background-color: red;
+}
+
+br {
+	display: none;
+}
+
+@media screen and (max-width:800px){
+	.socialicon {
+		width: 80px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width:750px) {
+	.contact {
+		width: 500px;
+	}
+
+	h3 {
+		font-size: 14pt;
+	}
+}
+
+@media screen and (max-width:550px) {
+	br {
+		display: inline;
+	}
+
+	.contact {
+		margin-top: 80px;
+		margin-bottom: 80px;
+		width: 475;
+	}
+
+	.socialicon {
+		margin-top: 25px;
+	}
+
+}

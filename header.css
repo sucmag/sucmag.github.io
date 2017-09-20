@@ -1,0 +1,94 @@
+header {
+	background-color: black;
+	height: 100px;
+	}
+
+header >.logo {
+	max-height: 75px;
+	margin-top: 12px;
+	margin-left: 25px;
+}
+
+header > h1 {
+	font-family: 'Helvetica';
+	font-size: 14pt;
+	color: white;
+	text-align: right;
+	float: right;
+	margin-top: 40px;
+	margin-right: 25px;
+	letter-spacing: 3px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	transition: ease .5s;
+}
+
+a:hover {
+	color: red;
+}
+
+.linebreak {
+	display: none;
+}
+
+.extraspace {
+	display: inline;
+}
+
+@media screen and (max-width:800px){
+	header > h1 {
+		letter-spacing: 0px;
+	}
+}
+
+@media screen and (max-width:800px){
+	header > .logo {
+		max-height: 40px;
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width:600px){
+	header {
+		text-align: center;
+
+	}
+
+	header > h1 {
+		letter-spacing: 3px;
+		text-align: center;
+		font-size: 10pt;
+		margin-top: 10px;
+		float: none;
+	}
+
+	header > .logo {
+		text-align: center;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 10px;
+		vertical-align: center;
+	}
+}
+
+@media screen and (max-width:550px) {
+	header {
+		height: 125px;
+	}
+
+	header > h1 {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.linebreak {
+		display: inline;
+	}
+
+	.extraspace {
+		display: none;
+	}
+
+}

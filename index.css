@@ -1,40 +1,107 @@
-body {
-	width: 100%;
-	height: 100%;
-}
-
-.templander {
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
-    max-height: 95%;
-    max-width: 90%;
-}
-
 html {
-	animation: slides 20s infinite;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	width: 100%;
+	margin: 0;
+	background-image: url(background.png);
 }
 
-@keyframes slides {
-	0% {
-		background-color: white;
+body {
+	margin: 0;
+	background-image: url(background.png);
+}
+
+.intro {
+	width:800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+.comingsoon {
+	width:800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 220px;
+	margin-bottom: 220px;
+}
+
+
+h2 {
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	font-size: 40pt;
+	color: white;
+	text-align: center;
+	margin-bottom: 0;
+	text-shadow: -2px 2px #000;
+}
+
+p {
+	font-size: 14pt;
+	text-align: justify;
+	color: white;
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	margin-top: 0;
+}
+
+.cover {
+	width: 300px;
+	margin-top: 50px;
+	box-shadow: none;
+	transition: box-shadow ease .5s;
+}
+
+.cover:hover {
+	box-shadow: -5px 5px red;
+}
+
+.content > h2 {
+	font-size: 18pt;
+}
+
+.content {
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width:820px) {
+	.intro {
+		width: 650px;
 	}
 
-	33% {
-		background-color: red;
+	.comingsoon {
+		width:650px;
 	}
 
-	66% {
-		background-color: gray;
+	h2 {
+		font-size: 30pt;
+	}
+}
+
+@media screen and (max-width:675px) {
+	.intro {
+		width: 500px;
 	}
 
-	99% {
-		background-color: white;
+	.comingsoon {
+		width: 500px;
+	}
+
+	h2 {
+		font-size: 25pt;
+	}
+}
+
+@media screen and (max-width:520px) {
+	.intro {
+		width: 350px;
+	}
+
+	.comingsoon {
+		width: 350px;
+	}
+
+	h2 {
+		font-size: 15pt;
+		margin-bottom: 20px;
 	}
 }
