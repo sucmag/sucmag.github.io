@@ -55,20 +55,13 @@ br {
 	}
 
 	.contact {
-		margin-top: 80px;
+		margin-top: 40px;
 		margin-bottom: 80px;
-		width: 475;
+		width: 370px;
 	}
 
 	.socialicon {
 		margin-top: 25px;
-	}
-
-}
-
-@media screen and (max-width:350px) {
-	.contact {
-		width: 325px;
 	}
 
 }
