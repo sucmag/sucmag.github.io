@@ -65,3 +65,10 @@ br {
 	}
 
 }
+
+@media screen and (max-width:350px) {
+	.contact {
+		width: 325px;
+	}
+
+}
