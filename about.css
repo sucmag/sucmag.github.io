@@ -83,3 +83,22 @@ p {
 		font-size: 10pt;
 	}
 }
+
+@media screen and (max-width:425px) {
+	.about {
+		width: 250px;
+	}
+
+	.bio {
+		width: 250px;
+	}
+
+	.biopic {
+		width: 200px;
+		float: none;
+		text-align: center;
+		margin-left: 25px;
+		margin-right: 25px;
+		margin-bottom: 20px;
+	}
+}

@@ -1,11 +1,12 @@
 html {
 	margin: 0;
-	background-image: url(background.png);
+	background-color: #282828;
 }
 
 body {
 	margin: 0;
-	background-image: url(background.png);
+	background-color: #282828;
+	max-width: 1300px;
 }
 
 .intro {
@@ -103,5 +104,35 @@ p {
 	h2 {
 		font-size: 15pt;
 		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 2600px) {
+	body {
+		zoom: 240%;
+	}
+}
+
+@media screen and (max-width: 2000px) {
+	body {
+		zoom: 200%;
+	}
+}
+
+@media screen and (max-width: 1700px) {
+	body {
+		zoom: 180%;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	body {
+		zoom: 150%;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	body {
+		zoom: 100%;
 	}
 }
