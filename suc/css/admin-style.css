@@ -1,0 +1,379 @@
+@font-face{
+  font-family: Insonsolata;
+  src: url('../assets/fonts/Inconsolata-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: InsonsolataBold;
+  src: url('../assets/fonts/Inconsolata-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: KayakSans;
+  src: url('../assets/fonts/Kayak Sans Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: KayakSansBold;
+  src: url('../assets/fonts/Kayak Sans Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: KayakSansLight;
+  src: url('../assets/fonts/Kayak Sans Light.otf');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/*UNIVERSAL*/
+
+body {
+  margin:0;
+  background-color: white;
+}
+
+h2 {
+  margin-top:15px;
+  font-family:Insonsolata;
+  text-align: center;
+}
+
+ul {
+  background-color:black;
+  font-family:Insonsolata;
+  font-weight:normal;
+  list-style-type: none;
+  height:25px;
+  width:100%;
+  margin-top:0;
+  margin-bottom:0;
+  padding-left:0;
+}
+
+nav ul {
+  margin:0 auto;
+  text-align:center;
+}
+
+ul li {
+  font-size: 18px;
+  padding:15px;
+  display: inline;
+  text-align:center;
+}
+
+ul li:hover{
+  color:black;
+  background-color:white;
+}
+
+ul a {
+  color:white;
+  text-decoration: none;
+}
+
+section {
+  height:100vh;
+}
+
+p {
+  font-family:Insonsolata;
+  font-size:12pt;
+}
+
+b {
+  font-family:InsonsolataBold;
+  font-weight: bold;
+}
+
+.editable{
+  margin:0 auto;
+  outline:none;
+}
+
+.content-container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.container{
+  width:100%;
+  margin:0 auto;
+  font-size: 0;
+}
+
+
+
+/* DIV CONTROL */
+#new-article{
+  display:block;
+}
+
+#upload-content{
+  display:none;
+}
+
+#archive-editor{
+  display:none;
+}
+
+#editor{
+  float:right;
+}
+
+/* uHHHH */
+
+#feat-be{
+  background-image: url(../assets/images/beau-elliot-feature.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-blend-mode: overlay;
+  background-size:cover;
+  background-position: center center;
+  width:100%;
+  height:400px;
+  padding-bottom: 50px;
+}
+
+#hero-title{
+  width:fit-content;
+  line-height: 95px;
+  margin: 0 auto;
+  color:#ffffff;
+  background-color: rgba(0,0,0,0.5);
+  padding: 0px 15px 0px 15px;
+}
+
+#hero-subtitle{
+  width:fit-content;
+  line-height: 50px;
+  margin: 0 auto;
+  color:#ffffff;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 20px;
+  padding: 0px 15px 0px 15px;
+}
+
+.article-subtitle-control{
+  padding-top: 150px;
+  padding-bottom: 2.5%;
+  outline:none;
+}
+
+.article-title-control{
+  outline:none;
+}
+
+.inline-img {
+  padding:50px 0px 50px 0px;
+}
+
+.inline-img-control{
+  width:100%;
+}
+
+.inline-img-caption {
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+  padding-left: 50px;
+}
+
+.inline-img-caption > h5 {
+  font-size: 10pt;
+  background-color: rgba(0,0,0,0.5);
+  color:#ffffff;
+  padding: 10px;
+}
+
+h5{
+  font-family:Insonsolata;
+  font-size:14pt;
+  font-weight:normal;
+  text-align: center;
+}
+
+h4{
+  font-family:Insonsolata;
+  font-size:21pt;
+  font-weight:normal;
+  text-align: center;
+  outline:none;
+}
+
+h2{
+  font-family:KayakSansBold;
+  font-weight:normal;
+  font-size:36pt;
+  text-align: center;
+  color:#000000;
+  margin-top:0;
+  padding-top: 5%;
+
+}
+
+h1{
+  font-family:KayakSans;
+  font-weight:normal;
+  font-size:48pt;
+  text-align: center;
+  outline:none;
+}
+
+form {
+  margin: 0 auto;
+  width:50%;
+  text-align:center;
+}
+
+form input {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  text-align:center;
+  font-family:Insonsolata;
+}
+
+textarea {
+  display: block;
+  width:50%;
+  height:500px;
+  margin:0 auto;
+  resize:none;
+}
+
+.admin-button{
+  border:0;
+  font-family: Insonsolata;
+  background: #000000;
+  color:white;
+  padding:15px;
+  text-align: center;
+  margin:0 auto;
+  outline:none;
+  margin: 25px 0px 25px 0px;
+}
+
+.card {
+  height:380px;
+  width:auto;
+  background-color: rgba(0, 0, 0, 1);
+  font-size: 0;
+  overflow: hidden;
+}
+
+.card-align{
+    display: inline-block;
+    font-size:0;
+    word-wrap: break-word
+}
+
+.card-align a{
+  text-decoration: none;
+}
+
+.card img{
+  opacity: 0.5;
+  object-position: 50% 50%;
+  object-fit: cover;
+  height:100%;
+  top:0;
+  left:0;
+  transition: opacity .3s ease-in-out, transform 5s cubic-bezier(.20,1,.40,1);
+}
+
+.card:hover img{
+  opacity: 1;
+  -moz-transform: scale(1.2);
+-webkit-transform: scale(1.2);
+transform: scale(1.2);
+}
+
+
+.card-text {
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+}
+
+.card-text p{
+  text-decoration: none;
+  color:#ffffff;
+  background: linear-gradient(90deg, rgba(0,0,0,0.75) 50%, transparent 0%) no-repeat;
+  background-size:205% 100%;
+  background-position-x:100%;
+  transition: background-position-x 1.2s cubic-bezier(.20,1,.40,1);
+  background-clip: content-box;
+  text-align:left;
+  width:50%;
+  padding-left:50px;
+}
+
+.card-align:hover p{
+  background-position: 0%;
+  background-clip: content-box;
+}
+
+.card-text h5 {
+  background: linear-gradient(90deg, rgba(0,0,0,0.75) 50%, transparent 0%) no-repeat;
+  background-size:205% 100%;
+  background-position-x:100%;
+  transition: background-position-x .5s cubic-bezier(.20,1,.40,1);
+  background-clip: content-box;
+  text-align:left;
+  padding-left: 50px;
+  margin-bottom: 0;
+  color:#ffffff;
+  text-transform: uppercase;
+  width:max-content;
+}
+
+.card-align:hover h5{
+  background-position: 0%;
+  background-clip: content-box;
+}
+
+.card-text h2 {
+  background: linear-gradient(90deg, rgba(0,0,0,0.75) 50%, transparent 0%) no-repeat;
+  background-size:205% 100%;
+  background-position-x:100%;
+  transition: background-position-x .7s cubic-bezier(.20,1,.40,1);
+  background-clip: content-box;
+  text-align:left;
+  padding-left:50px;
+  color:#ffffff;
+  padding-top: 0;
+  width:max-content;
+}
+
+.card-align:hover h2{
+  background-position: 0%;
+  background-clip: content-box;
+}
+
+blockquote{
+  background-color: black;
+  padding:15px;
+  color:white;
+  font-size:21px;
+  font-family: Insonsolata;
+}
+
+#output-area{
+  text-align:center;
+}
+
+#card-preview{
+  text-align:center;
+}
+
+#card-code{
+  margin-bottom:25px;
+}
